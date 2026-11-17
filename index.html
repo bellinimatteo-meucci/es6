@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="body">
+
+
+    <div class=" row text-start vh-100 position-relative" id="div-accesso">
+        <div class=" col-md-7 col-sm-6 d-sm-block d-none ">
+
+            <h1>Hi guys</h1>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea quae, earum hic ut deserunt
+                perferendis! Accusamus odit libero, sapiente laudantium nemo eveniet non deserunt voluptas debitis
+                natus
+                cupiditate quas!
+            </p>
+
+        </div>
+        <div class="col-md-5 col-sm-6 col-12 bg-white text-dark pb-5 ">
+            <h1>Login </h1>
+            <p>Don't have an account? <a href="#" onclick="mostra()">Create your account.</a> Takes a few
+                minutes.</p>
+
+            <br>
+            <div id="avviso" class="avviso d-none text-start text-white ">
+                <p id="failed"></p>
+            </div>
+            <br>
+            <p class="mb-0">Username</p>
+            <input type="text" id="username" class="w-75 border-top-0 border-start-0 border-end-0">
+            <p class="mb-0 mt-3">Password</p>
+            <input type="password" id="password" class="w-75 border-top-0 border-start-0 border-end-0">
+            <i class="bi bi-eye-slash fs-3" id="icona" onclick="scopri()"></i>
+            <br>
+            <button onclick="login()" class="btn btn-primary my-3" id="login">Login</button>
+        </div>
+    </div>
+    <div id="divreg" class="divreg d-none text-center position-absolute top-50 start-50 bg-grey p-4 z-3 w-100 translate-middle">
+        <i class="bi bi-x" onclick="nascondi()"></i>
+        <h1>Sign Up</h1>
+        <p>please fill in this form to create an account</p>
+        <div class="g-0">
+            <input type="text" id="new-user" class="border-top-0  border-end-0 border-start-0">
+            <input type="password" id="new-psw" class="border-top-0  border-end-0 border-start-0">
+            <button onclick="registrazione()" class="btn btn-primary">Registrati</button>
+        </div>
+        <div id="avvisoreg" class=" d-none">
+            <p id="reg-msg"></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

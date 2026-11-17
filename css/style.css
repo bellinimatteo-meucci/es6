@@ -1,0 +1,24 @@
+.body {
+    background-image: url("../img/Pastedmage.png");
+    color: white;
+}
+
+.avviso {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.errore {
+    background-color: darkred;
+}
+.success {
+    background-color: darkgreen;
+}
+
+.divreg {
+    background-color: darkgrey;
+}
+.trasparente {
+    opacity: 0.5;
+}
